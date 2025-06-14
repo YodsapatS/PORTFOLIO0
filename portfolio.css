@@ -1,0 +1,309 @@
+body {
+    margin: 20px 0 60px 0;
+    padding: 0 0 80px 0;
+    font-family: "oswald", sans-serif;
+    background-color: black;
+}
+
+.block_port {
+    background-color: rgba(80, 79, 79, 0.789);
+    width: 90vw;
+    max-width: 90%;
+    height: 80%;
+    margin: 20px auto 60px; /* เพิ่มขอบล่างให้ห่างจาก content ด้านล่าง */
+    padding: 20px 20px 60px 20px; /* padding ล่างเพิ่มขึ้น */
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: visible;
+  }
+.hamburger-container {
+      position: fixed;
+      display: inline-block;
+      padding: 10px;
+      color: white;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    /* เมนูที่ซ่อนอยู่ */
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #444;
+      min-width: 160px;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1;
+    }
+
+    .dropdown-menu a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-family: 'athiti';
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #555;
+    }
+
+    /* แสดงเมนูเมื่อเอาเมาส์ไปชี้ */
+    .hamburger-container:hover .dropdown-menu {
+      display: block;
+      animation: slideDown 0.3s ease;
+    }
+
+    /* ขีด 3 ขีด */
+    .hamburger-icon {
+      font-size: 28px;
+    }
+    
+.block_port h2{
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 5px 5px 3px #444;
+  margin: 0;
+  top: 0;
+  padding: 0;
+}
+
+.blank{
+  width: 100%;
+  height: 100px;
+  margin: 20px;
+}
+
+.marquee {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-track {
+    display: flex;
+    gap: 50px;
+    animation: scroll-left 40s linear infinite;
+    width: max-content;
+}
+
+.port{
+    min-width: 200px;
+    text-align: center;
+}
+
+.port img,
+.port video {
+    margin-top: 15px;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+}
+
+.port p {
+    margin-top: 5px;
+    margin-left: 0px;
+    font-size: 20px;
+    text-align: center;
+    color: azure;
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* ใช้สีเหมือน parent element */
+}
+
+.headphoto{
+  position: relative;
+}
+
+.headphoto img{
+  margin-top: 80px;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.intro {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 45px;
+  padding: 1px;
+  text-align: center;
+  color: white;
+  text-shadow: 8px 5px 5px rgb(27, 30, 35) ;
+  animation: fadezoom 5s;
+}
+
+.hamburger-container {
+      position: fixed;
+      display: inline-block;
+      padding: 10px;
+      color: white;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    /* เมนูที่ซ่อนอยู่ */
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #444;
+      min-width: 160px;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1;
+    }
+
+    .dropdown-menu a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-family: 'athiti';
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #555;
+    }
+
+    /* แสดงเมนูเมื่อเอาเมาส์ไปชี้ */
+    .hamburger-container:hover .dropdown-menu {
+      display: block;
+      animation: slideDown 0.3s ease;
+    }
+
+    /* ขีด 3 ขีด */
+    .hamburger-icon {
+      font-size: 28px;
+    }
+
+    /* เพิ่ม animation เลื่อนลง */
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+.contain {
+    background-color: black;
+    color: aliceblue;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: "Oswald", Athiti;
+    font-size: 17px;
+}
+
+.info-wrapper {
+  display: flex;
+  align-items: flex-start;  /* จัดให้แนวบนตรงกัน */
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;  /* ให้ responsive บนอุปกรณ์เล็ก */
+}
+
+.contain img {
+  width: 400px;
+  height: 530px;
+  object-fit: cover;
+}
+
+.information {
+  max-width: 500px;
+  color: aliceblue;
+  font-size: 17px;
+  line-height: 1.5;
+  margin-top: 100px;
+  text-align: left;
+}
+
+@keyframes fadezoom {
+    0% {opacity: 0.2; 
+       transform:translate(-50%, -50%) scale(0.5);}
+    100% {opacity: 1; 
+      transform:translate(-50%, -50%) scale(1.0);}
+}
+@media (max-width: 768px) {
+  .port img,
+  .port video {
+    width: 90vw;
+    height: auto;
+  }
+
+  .headphoto{
+    width: 100%;
+    height: auto;
+  }
+
+  .port p {
+    margin-left: 250px;
+    font-size: 16px;
+
+  }
+
+  .block_port {
+    width: 90%;
+    height: 500px;
+    padding: 10px;
+    overflow-x: scroll;  /* เปิดให้เลื่อนได้ถ้าล้น */
+  }
+ .info-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .information {
+    margin-left: 0;
+    margin-top: 0px;
+    max-width: 90%;
+  }
+
+  .contain img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 450px) {
+    .block_port {
+        font-size: 1rem;
+        width: 90% ;
+        height: 35% ;    }
+    
+    .headphoto{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .introduction{
+    font-size: 0.7rem;
+  }
+
+  .information h3{
+    font-size: 0.9rem;
+  }
+}
+
+@keyframes scroll-left {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-100%);}
+}

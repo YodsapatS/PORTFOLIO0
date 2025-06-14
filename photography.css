@@ -1,0 +1,138 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "athiti", oswald;
+}
+
+.box h1{
+    color: aliceblue;
+    text-align: center;
+}
+
+.box{
+    background-color: rgb(98, 99, 100, 0.5);
+    height: 90%;
+    width: 90vw ;
+    border-radius: 8px;
+    flex-wrap: wrap;  /* ให้ responsive บนอุปกรณ์เล็ก */
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.photoall {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.photo-ver{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.photo img {
+    flex : 1 1 300px;
+    width: 300px;
+    height: 200;
+    padding: 1px;
+    margin: 10px;
+    box-shadow: 0 6px 16px rgba(208, 229, 91, 0.6);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+.hamburger-container {
+      position: fixed;
+      display: inline-block;
+      padding: 10px;
+      color: white;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    /* เมนูที่ซ่อนอยู่ */
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #444;
+      min-width: 160px;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1;
+    }
+
+    .dropdown-menu a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-family: 'athiti';
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #555;
+    }
+
+    /* แสดงเมนูเมื่อเอาเมาส์ไปชี้ */
+    .hamburger-container:hover .dropdown-menu {
+      display: block;
+      animation: slideDown 0.3s ease;
+    }
+
+    /* ขีด 3 ขีด */
+    .hamburger-icon {
+      font-size: 28px;
+    }
+
+.photo-her img {
+    flex : 1 1 300px;
+    width: 300px;
+    height: 420px;
+    padding: 1px;
+    margin: 10px;
+    box-shadow: 0 6px 16px rgba(208, 229, 91, 0.6);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.photo-ld img {
+    flex : 1 1 300px;
+    max-width: 300px;
+    height: 200px;
+    padding: 1px;
+    margin: 10px;
+    box-shadow: 0 6px 16px rgba(208, 229, 91, 0.6);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.photo-ver img {
+    flex :1 1 300px;
+    width: 300px;
+    height: 400px;
+    padding: 1px;
+    margin: 10px;
+    box-shadow: 0 6px 16px rgba(208, 229, 91, 0.6);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.photo img:hover , 
+.photo-ver img:hover,
+.photo-ld img:hover {
+      transform: scale(1.05);}
