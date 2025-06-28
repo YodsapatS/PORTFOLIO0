@@ -142,12 +142,10 @@ body{
 
   .poster, .threed {
     flex: 0 0 auto;
-    width: auto;
     scroll-snap-align: start;
   }
 
   .poster img, .threed img, .threed video, .threed iframe {
-    width: auto;
     height: auto;
   }
 
