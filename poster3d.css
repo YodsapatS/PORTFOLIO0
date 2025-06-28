@@ -131,20 +131,23 @@ body{
       font-size: 28px;
     }
 @media screen and (max-width: 768px) {
-  .box, .box1 {
-    flex-direction: column; /* ← แนวตั้งเมื่อหน้าจอเล็ก */
+  .box {
+    display:flex
+    flex-direction: column;
     align-items: center;
-    height: auto; /* ← ปรับให้ความสูงตามเนื้อหา */
+    height: 1500px;
   }
 
-  .poster, .threed {
-    width: 90vw; /* ลดความกว้างให้ไม่ชนกัน */
+  .poster {
+    width: 80vw;
     margin-bottom: 20px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
-
-  .poster img, .threed img, .threed video, .threed iframe {
-    width: 90vw; /* ลดความกว้างของ media */
+    .box1 {
+    display:flex
+    flex-direction: column;
+    align-items: center;
+    height: 2700px;
   }
 }
 
