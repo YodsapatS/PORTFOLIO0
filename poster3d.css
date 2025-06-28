@@ -14,7 +14,7 @@ body{
 
 .box{
     background-color: rgb(98, 99, 100, 0.5);
-    height: 80vh;
+    height: 80%;
     width: 90vw ;
     border-radius: 8px;
     flex-wrap: wrap;  /* ให้ responsive บนอุปกรณ์เล็ก */
@@ -24,7 +24,7 @@ body{
 
 .box1{
     background-color: rgb(98, 99, 100, 0.5);
-    height: 145vh;
+    height: 80%;
     width: 90vw ;
     border-radius: 8px;
     flex-wrap: wrap;  /* ให้ responsive บนอุปกรณ์เล็ก */
