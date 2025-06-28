@@ -14,7 +14,7 @@ body{
 
 .box{
     background-color: rgb(98, 99, 100, 0.5);
-    height: 100vh;
+    height: 80vh;
     width: 90vw ;
     border-radius: 8px;
     flex-wrap: wrap;  /* ให้ responsive บนอุปกรณ์เล็ก */
@@ -24,7 +24,7 @@ body{
 
 .box1{
     background-color: rgb(98, 99, 100, 0.5);
-    height: 100vh;
+    height: 145vh;
     width: 90vw ;
     border-radius: 8px;
     flex-wrap: wrap;  /* ให้ responsive บนอุปกรณ์เล็ก */
@@ -142,12 +142,12 @@ body{
 
   .poster, .threed {
     flex: 0 0 auto;
-    width: 80vw;
+    width: auto;
     scroll-snap-align: start;
   }
 
   .poster img, .threed img, .threed video, .threed iframe {
-    width: 100%;
+    width: auto;
     height: auto;
   }
 
