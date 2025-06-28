@@ -158,13 +158,11 @@ body{
 
 @media screen and (max-width: 1030px) {
     .box {
-        height: 600px;
             display: flex; /* ← เพิ่มบรรทัดนี้ */
     flex-wrap: wrap;
     justify-content: center; /* ช่วยให้จัดกึ่งกลาง */
     }
     .box1 {
-        height: 1550px;
             display: flex; /* ← เพิ่มบรรทัดนี้ */
     flex-wrap: wrap;
     justify-content: center; /* ช่วยให้จัดกึ่งกลาง */
