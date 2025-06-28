@@ -78,7 +78,7 @@ body{
     border-radius: 10px;
 }
 
-.threed video {
+.threed video, .threed iframe{
     width: 350px;
     padding: 0px;
     box-shadow: 0 6px 16px rgba(211, 209, 209, 0.6);
